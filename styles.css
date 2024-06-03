@@ -1,0 +1,36 @@
+body {
+    display: flex; /* Centers the container horizontally and vertically */
+    justify-content: center; /* Centers the container horizontally */
+    align-items: center; /* Centers the container vertically */
+    height: 100vh; 
+    /* Sets the height of the body to 100% of the viewport height */
+    margin: 0; /* Removes default margin */
+    background-color: #2e2e2e; /* Dark background color */
+    font-family: Arial, sans-serif; /* Sets the font family */
+}
+
+.container {
+    display: grid; /* Uses CSS grid layout */
+    grid-template-columns: repeat(3, 1fr); 
+    /* Creates 3 columns of equal width */
+    gap: 20px; /* Sets a 20px gap between grid items */
+}
+
+.square {
+    width: 100px; /* Sets the width of each square */
+    height: 100px; /* Sets the height of each square */
+    display: flex; /* Centers the content inside the square */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    background-color: #403e4f; /* Dark pastel background color */
+    color: #e6e6e6; /* Text color */
+    font-size: 24px; /* Font size of the text */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    /* Smooth transition for transform and background color */
+}
+
+.square:hover {
+    transform: scale(1.1); /* Scales the square up on hover */
+    background-color: #888884; /* Changes background color on hover */
+}
